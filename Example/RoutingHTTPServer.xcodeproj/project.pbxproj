@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		459446D9276B1A20008ACC80 /* RouteResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECC914795B3200F648A5 /* RouteResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459446DA276B1A20008ACC80 /* Route.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECC514795B3200F648A5 /* Route.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459446DB276B1A20008ACC80 /* RoutingHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECCD14795B3200F648A5 /* RoutingHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459446DC276B1A20008ACC80 /* HTTPResponseProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECC314795B3200F648A5 /* HTTPResponseProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459446DD276B1A20008ACC80 /* RouteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECC714795B3200F648A5 /* RouteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		459446DE276B1A20008ACC80 /* RoutingConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = C99CECCB14795B3200F648A5 /* RoutingConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C99CEC8A147959C200F648A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C99CEC89147959C200F648A5 /* Cocoa.framework */; };
 		C99CEC94147959C200F648A5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C99CEC92147959C200F648A5 /* InfoPlist.strings */; };
 		C99CEC96147959C200F648A5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C99CEC95147959C200F648A5 /* main.m */; };
@@ -285,11 +291,28 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		459446D8276B19FC008ACC80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				459446DD276B1A20008ACC80 /* RouteRequest.h in Headers */,
+				459446DA276B1A20008ACC80 /* Route.h in Headers */,
+				459446D9276B1A20008ACC80 /* RouteResponse.h in Headers */,
+				459446DC276B1A20008ACC80 /* HTTPResponseProxy.h in Headers */,
+				459446DB276B1A20008ACC80 /* RoutingHTTPServer.h in Headers */,
+				459446DE276B1A20008ACC80 /* RoutingConnection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		C99CEC84147959C200F648A5 /* RoutingHTTPServer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C99CECB7147959C300F648A5 /* Build configuration list for PBXNativeTarget "RoutingHTTPServer" */;
 			buildPhases = (
+				459446D8276B19FC008ACC80 /* Headers */,
 				C99CEC81147959C200F648A5 /* Sources */,
 				C99CEC82147959C200F648A5 /* Frameworks */,
 				C99CEC83147959C200F648A5 /* Resources */,
